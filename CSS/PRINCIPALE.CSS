@@ -170,6 +170,14 @@ label{
     transform: scale(1.1);
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    #ins{
+        padding: 0 0;
+        width: 100%;
+    }
+}
+
 @keyframes slide {
     0% {
         transform: translateY(-100%);
