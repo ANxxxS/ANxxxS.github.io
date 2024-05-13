@@ -67,9 +67,15 @@ nav ul {
 #d .text {
     padding: 0;
     text-align: right;
+    animation: slide 2s ease;
 }
 #d h5 {
     padding: 4rem;
+}
+#d a button:hover {
+    background: #ffffff;
+    color: #000;
+    border-radius: 10px;
 }
 button {
     padding: 2rem 6rem;
@@ -88,7 +94,7 @@ button {
     justify-content: space-around;
     flex-flow: row wrap;
     gap: 10px;
-
+    padding-bottom: 30px;
 }
 .fil .CPI img{
 margin:100px 100px ;
@@ -137,5 +143,38 @@ label{
 #ins input{
     font-size:  16px ;
     padding: 0.2rem;
+    border-radius: 5px;
+    border: none;
+
 }
- 
+#ins input:hover{
+    scale: 1.01;
+    cursor: pointer;
+}
+.nav-link:hover {
+    color: #DE895D;
+    scale: 1.1;
+    text-decoration: underline;
+}
+.CPI {
+    background-color: #000;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.CPI h4 {
+    text-align: center;
+}
+.CPI:hover {
+    background-color: #DE895D;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
