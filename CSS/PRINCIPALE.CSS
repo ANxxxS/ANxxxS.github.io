@@ -105,17 +105,18 @@ padding-right: 100px;
 
     padding: 0 55rem;
     } 
-    
+
 
 .rt{
     width: 100%;
-    
+
     min-height: 100vh;
     padding-top:  15rem; ;
 }
 #ins h1 {
     text-align: center;
     white-space: nowrap;
+    padding: 10px;
 }
 label{
     font-size: 24px;
@@ -127,9 +128,8 @@ label{
     background-color: rgb(44, 36, 36);
     color: #ffffff;
 }
-#ins td{
-    font-size: 15px;
-}
+
+
 #ins{
     background-image: url("last.jpg");
     background-size: cover;
@@ -139,6 +139,8 @@ label{
     justify-content: space-around;
     flex-flow: row wrap;
     gap: 10px;
+    padding: 10px;
+    
 }
 #ins input{
     font-size:  16px ;
@@ -171,12 +173,7 @@ label{
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-    #ins{
-        padding: 0 0;
-        width: 100%;
-    }
-}
+
 
 @keyframes slide {
     0% {
@@ -186,3 +183,13 @@ label{
         transform: translateY(0);
     }
 }
+.BOR ul {
+    list-style: none;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .BOR ul input{
+    margin-top: 10px;
+ }
+ 
